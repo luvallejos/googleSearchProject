@@ -9,7 +9,7 @@ class SearchPage(BasePage):
 
     google_logo = (By.XPATH, "//img[@alt='Google']")
     search_voice_btn = (By.XPATH, "//div[@aria-label='Search by voice']")
-    search_input = (By.ID, "//input[@title='Search']")
+    search_input = (By.XPATH, "//input[@title='Search']")
     google_search_btn = (By.XPATH, "(//input[@name='btnK'])[2]")
     lucky_search_btn = (By.NAME, "(//input[@name='btnI'])[2]")
     suggestionsbyinput_xpath = "(//ul[@role=\"listbox\"]//li//span[text()=\"{0}\"])[{1}]"

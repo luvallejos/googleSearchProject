@@ -4,7 +4,9 @@ from selenium import webdriver
 class Driver:
 
     def __init__(self):
-        self.instance = webdriver.Chrome()
+        options = webdriver.ChromeOptions()
+        options.add_argument("--lang=en-uk")
+        self.instance = webdriver.Chrome(options=options)
 
     def navigate(self, url):
         self.instance.maximize_window()
