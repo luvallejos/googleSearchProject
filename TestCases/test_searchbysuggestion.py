@@ -12,7 +12,7 @@ class TestSearchBySuggestion:
 
     def test_searching_by_selecting_suggestion(self):
         search_page = SearchPage(self.driver)
-        search_page.select_suggestion_in_list("The Name of the Wind", 1)
+        search_page.select_suggestion_in_list_by_position("The Name of the W", 1)
         results_page = SearchResultsPageAllMode(self.driver)
         assert results_page.check_title_result_by_order(1, "The Name of the Wind")
         results_page.select_result_by_order(1)
