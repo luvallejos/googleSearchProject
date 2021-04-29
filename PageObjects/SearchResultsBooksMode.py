@@ -6,7 +6,7 @@ class SearchResultsBooksMode(SearchResultsBasePage):
 
     """Locators elements in Search Results Page Books Mode"""
 
-    # Header Section
+    # Search Section
     search_books_mode_selected_btn = (By.XPATH, "//div[@id='top_nav']//div[@aria-current='page' and text()='Books']")
 
     # Search Results section
@@ -16,5 +16,5 @@ class SearchResultsBooksMode(SearchResultsBasePage):
     def __init__(self, driver):
         super().__init__(driver)
 
-    def is_results_books_mode_page_displayed(self):
-        self.is_element_visible(self.search_books_mode_selected_btn)
+    def check_results_books_mode_page_displayed(self):
+        return self.is_element_visible(self.search_books_mode_selected_btn)

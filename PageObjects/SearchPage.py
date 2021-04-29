@@ -7,6 +7,7 @@ class SearchPage(BasePage):
 
     """Locators elements in Search Page"""
 
+    # Search box Section
     google_logo = (By.XPATH, "//img[@alt='Google']")
     search_voice_btn = (By.XPATH, "//div[@aria-label='Search by voice']")
     search_input = (By.XPATH, "//input[@title='Search']")

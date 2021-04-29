@@ -1,6 +1,6 @@
 
 
 class Config:
-    EXECUTABLE_CHROME_PATH = "D:\Automation\googleSearch\venv\Scripts"
 
+    # Urls
     BASE_URL = "https://www.google.com/"
