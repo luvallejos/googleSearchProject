@@ -1,4 +1,3 @@
-import pytest
 
 
 ############ HTML Report Configuration ######################

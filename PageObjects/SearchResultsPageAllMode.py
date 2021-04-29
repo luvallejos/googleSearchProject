@@ -28,12 +28,3 @@ class SearchResultsPageAllMode(SearchResultsBasePage):
     def select_result_by_order(self, order):
         result_link_xpath = self.link_to_results_by_order.format(order)
         self.click_btn((By.XPATH, result_link_xpath))
-
-
-
-
-
-
-
-
-

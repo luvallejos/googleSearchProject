@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class BasePage:
 
-    """This class cointains all the methods commons for all the pages"""
+    """This class contains all the methods commons for all the pages"""
 
     def __init__(self, driver):
         self.driver = driver

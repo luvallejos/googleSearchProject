@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 class SearchResultsBasePage(BasePage):
 
-    """This class cointains commons elements and methods for all Search Results Pages for different modes"""
+    """This class contains commons elements and methods for all Search Results Pages for different modes"""
 
     """Locators elements in Search Results Base Page"""
 
@@ -22,7 +22,7 @@ class SearchResultsBasePage(BasePage):
 
     # Search Results section
     results_status = (By.ID, "result-stats")
-    noresults_msg = (By.XPATH, "//div[@id='res']//p[contains(text(),\"Suggestions:\")]")
+    no_results_msg = (By.XPATH, "//div[@id='res']//p[contains(text(),\"Suggestions:\")]")
 
     """Actions in Search Results Base Page"""
 
@@ -51,6 +51,4 @@ class SearchResultsBasePage(BasePage):
         return self.is_element_visible(self.results_status)
 
     def check_no_results_found(self):
-        return self.is_element_visible(self.noresults_msg)
-
-
+        return self.is_element_visible(self.no_results_msg)

@@ -7,7 +7,8 @@ class SearchResultsShoppingMode(SearchResultsBasePage):
     """Locators elements in Search Results Page Shopping Mode"""
 
     # Search Section
-    search_shopping_mode_selected_btn = (By.XPATH, "//div[@id='top_nav']//div[@aria-current='page' and text()='Shopping']")
+    search_shopping_mode_selected_btn = (By.XPATH, "//div[@id='top_nav']//div[@aria-current='page' and "
+                                                   "text()='Shopping']")
 
     # Search Results section
 
